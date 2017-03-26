@@ -70,7 +70,7 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 	
 7. Run the code
 
-	By default, you should download to Downloads folder (again, I am assuming you are using a Mac). In the terminal, type:
+	In step 3, most likely, you download to Downloads folder (again, I am assuming you are using a Mac). In the terminal, type:
 	
 	```
 	cd Downloads/emailant-master
