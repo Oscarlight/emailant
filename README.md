@@ -16,8 +16,10 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 	1. check whether you have pip:
 	
 		Assume you are using a mac, open a terminal, type: 
-	
-	<p><code>which pip</code></p>
+		
+		```
+		which pip
+		```
 	
 		if it return nothing, you need to install pip first; otherwise jump to step iii.
 	
