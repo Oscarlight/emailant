@@ -15,25 +15,30 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 	python packages: email, smtplib, xlrd. "email" and "smtplib" normally come with python. You need to install xlrd to read excel sheets:
 	1. check whether you have pip:
 	
-	Assume you are using a mac, open a terminal, type: 
+	...Assume you are using a mac, open a terminal, type: 
 	
-	***which pip
+	```which pip
+	```
 	
-	if it return nothing, you need to install pip first; otherwise jump to step 3
+	...if it return nothing, you need to install pip first; otherwise jump to step 3
 	
 	2. Install pip
 	
-	In the terminal, type:
+	...In the terminal, type:
 	
-	***sudo easy_install pip
+	```sudo easy_install pip
+	```
 	
 	it will ask for your password. It will be the same password you used to unlock your computer when logging in.
 	
 	3. Install xlrd
 	
-	***sudo pip install xrld
+	...In the terminal, type:
 	
-	In the last line of return message, it should say "Successfully installed xlrd..."
+	```sudo pip install xrld
+	```
+	
+	...In the last line of return message, it should say "Successfully installed xlrd..."
 	
 2. Allow thrid party access to your Gmail account:
 
