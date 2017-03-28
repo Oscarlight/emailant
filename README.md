@@ -65,8 +65,22 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 		
 6. Prepared the decision result sheet:
 
-	Create the decision result sheet in the same format of example.xls
-	(You may want to first test on a testing decision sheet to make sure all the formats are correct)
+	Create the decision result sheet in the same format of example_decision_sheet.xls
+	**__(You may want to first test on a testing decision sheet to make sure all the formats are correct)__**
+	The columes used to generate email body are:
+	
+	0. Page# in pdf: not used, can leave blank or anything
+	1. **Email**: the email address of the recipient
+	2. Sent?: not used, can leave blank or anything
+	3. **Unique ID**: the unique ID of the abstract
+	4. **Decision**: the decision of the abstract. One of the three options: Oral, Poster, Reject
+	5. **Abstract Title**: the titile of the abstract
+	6. **Topic**: not used, can leave blank or anything
+	7. **Last name**: the last name of the recipient
+	8. **Action**: if you want to send email to this recipient, put Send here; otherwise, it will skip this recipent.
+	9. Student?: not used, can leave blank or anything
+	
+	**__(Please make sure the column index is correct, the script use the column index to find the corresponding field)__**
 	
 7. Run the code
 
