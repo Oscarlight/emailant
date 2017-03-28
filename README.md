@@ -70,14 +70,23 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 	The columes used to generate email body are:
 	
 	column 0. Page# in pdf: not used, can leave blank or anything
+	
 	column 1. **Email**: the email address of the recipient
+	
 	column 2. Sent?: not used, can leave blank or anything
+	
 	column 3. **Unique ID**: the unique ID of the abstract
+	
 	column 4. **Decision**: the decision of the abstract. One of the three options: Oral, Poster, Reject
+	
 	column 5. **Abstract Title**: the titile of the abstract
+	
 	column 6. **Topic**: not used, can leave blank or anything
+	
 	column 7. **Last name**: the last name of the recipient
+	
 	column 8. **Action**: if you want to send email to this recipient, put Send here; otherwise, it will skip this recipent.
+	
 	column 9. Student?: not used, can leave blank or anything
 	
 	**__(Please make sure the column index is correct, the script use the column index to find the corresponding field)__**
