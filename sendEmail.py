@@ -55,4 +55,4 @@ if __name__ == "__main__":
 				  subject = "YOUR SUBJECT", \
 				  body = c.getBodyList()[1][i])
 		s.send(i)
-		print str(i) + ": Sent email to: " + self.toaddr
+		print str(i) + ": Finish sending email to: " + self.toaddr
