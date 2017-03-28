@@ -90,7 +90,7 @@ class createEmail(object):
 
 if __name__ == "__main__":
 	# (* for testing *)
-	c = createEmail("test.xlsx")
+	c = createEmail("example_decision_sheet.xlsx")
 	# print c.getEmailList()
 	# print c.getActionList()
 	# print c.getLastNameList()

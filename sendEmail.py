@@ -20,7 +20,7 @@ class sendEmail(object):
 		# self.subject = ""
 		# self.body = ""
 
-	def send(self):
+	def send(self, i):
 		msg = MIMEMultipart()
 		msg['From'] = self.fromaddr
 		msg['To'] = self.toaddr
@@ -28,9 +28,12 @@ class sendEmail(object):
 		 
 		msg.attach(MIMEText(self.body, 'plain'))
 
-		# server = smtplib.SMTP('smtp.gmail.com', 587)
-		# server.starttls()
-		# server.login(self.fromaddr, self.password)
+		# reconnect every 10 emails
+		if i % 10 == 0:
+			server = smtplib.SMTP('smtp.gmail.com', 587)
+			server.starttls()
+			server.login(self.fromaddr, self.password)
+
 		text = msg.as_string()
 		self.server.sendmail(self.fromaddr, self.toaddr, text)
 
@@ -51,4 +54,5 @@ if __name__ == "__main__":
 		s.setup(toaddr = c.getBodyList()[0][i], \
 				  subject = "YOUR SUBJECT", \
 				  body = c.getBodyList()[1][i])
-		s.send()
+		s.send(i)
+		print str(i) + ": Sent email to: " + self.toaddr
