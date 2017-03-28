@@ -84,6 +84,8 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 	
 7. Run the code
 
+	* in sendEmail.py: go to line 43, insert the name of your execel file.
+	
 	In step 3, most likely, you download to Downloads folder (again, I am assuming you are using a Mac). In the terminal, type:
 	
 	```
