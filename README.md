@@ -38,7 +38,7 @@ Email Ant is used to send conference decision (reject/poster/oral) emails.
 		In the terminal, type:
 	
 		```
-		sudo pip install xrld
+		sudo pip install xlrd
 		```
 	
 		In the last line of return message, it should say "Successfully installed xlrd..."
